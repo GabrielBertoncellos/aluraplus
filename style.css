@@ -1,0 +1,114 @@
+:root{
+    --branco-principal: white;     /*Pasta root serve para indicar diversos temas da edição q serao usados no projeto*/
+    --cinza-secundario: #c0c0c0;
+    --botao-azul:#167bf7;
+    --cor-fundo: #00030c;
+    --fonte-principal: "Inter";
+}
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal); 
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;    
+}
+*{
+    margin: 0;         /* O "*" pega todos elementos basicos da pagina para editar*/
+    padding: 0;
+}
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: none;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height:100vh;  /*A classe CONTAINER e o height 100vh busca usar 100% da tela do usuário*/
+    display: grid; /* para que os botoes se alinhem a esquerda , dividindo a tela em 2 como abaixo*/
+    grid-template-columns: 50% 50%;
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;   /*para cada botao ocupar sua linha*/
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.secundario__imagem{
+    width: 80%;
+    
+}
+.secundario{
+    align-items: center;
+    margin: 0 8em;
+}
+.descricao-titulo {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+}
+.descricao-texto{
+    color: var(--cinza-secundario);
+}
+.secundario_botao{
+    display: inline-block; /* serve para limitar o tamanho do botao apenas onde ele preenche*/
+    margin: 2em 0;
+    padding: 2em;
+}
+.dispositivos__lista{
+    display: flex; /*por padrao torna a disposição dos itens em LINHA*/
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 48px;
+}
+.lista__item{
+    font-size: 32px;
+}
+.rodape{
+    text-align: center;
+}
+.rodape__lista{
+    display: flex;
+    font-size: 16px;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 5em 0;    
+    
+}
+.lista__link a{
+    color: var(--cinza-secundario);
+    text-decoration: none;
+    
+}
+.rodape__texto{
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin-bottom: 3em;
+}
